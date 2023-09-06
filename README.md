@@ -5,7 +5,7 @@
 
 Esse projeto foi realizado em conjunto com as aulas disponibilizadas no curso "java COMPLETO 2023 Programação Orientada a Objetos + Projetos" na plataforma [Udemy](https://www.udemy.com/).
 
-De forma resumida, o desenvolvimento foi feito com o framework Spring Boot fazendo conexão ao banco de dados MySQL, envolvendo um sistema básico de vendas e departamentos.
+De forma resumida, o desenvolvimento foi feito com o framework Spring Boot, em que tive contato pela primeira vez com conexão a banco de dados (nesse projeto, utilizamos o banco MySQL) e implementação do padrão DAO, envolvendo um sistema básico de vendas e departamentos.
 
 
 # Competências
