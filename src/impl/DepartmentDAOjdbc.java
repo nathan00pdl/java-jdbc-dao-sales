@@ -13,17 +13,13 @@ import db.dbException;
 import db.dbIntegrityException;
 import entities.Department;
 
-//Obs: 'DepartmentDAOjdbc' é uma implementação jdbc da interface 'DepartmentDAO'
 public class DepartmentDAOjdbc implements DepartmentDAO{
 
-	//Gerando dependência
-	private Connection conn;
-		
+	private Connection conn;		
 	public DepartmentDAOjdbc(Connection conn) {
 		this.conn = conn;
 	}
 
-	//Declarando métodos estáticos
 	@Override
 	public void insert(Department obj) {
 		PreparedStatement st = null;

@@ -10,16 +10,13 @@ public class Department implements Serializable{
 	private Integer id;
 	private String name;
 
-	//Declarando construtores
-	public Department() {}
-	
+	public Department() {}	
 	public Department(Integer id, String name) {
 		super();
 		this.id = id;
 		this.name = name;
 	}
 	
-	//Declarando construtores
 	public Integer getId() {
 		return id;
 	}
@@ -34,7 +31,6 @@ public class Department implements Serializable{
 		this.name = name;
 	}
 	
-	//Declarando métodos hashCode e equals
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -52,7 +48,6 @@ public class Department implements Serializable{
 		return Objects.equals(id, other.id);
 	}
 
-	//Declarando método toString()
 	@Override
 	public String toString() {
 		return "Department [id: " + id + ", name: " + name + "]";

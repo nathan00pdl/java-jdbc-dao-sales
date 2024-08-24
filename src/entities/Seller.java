@@ -13,13 +13,10 @@ public class Seller implements Serializable{
 	private String email;
 	private Date birthDate;
 	private Double baseSalary;
-	
-	//Declarando associação com a classe 'Department'
+
 	private Department department;
 	
-	//Declarando contrutores
 	public Seller() {}
-
 	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
 		super();
 		this.id = id;
@@ -30,7 +27,6 @@ public class Seller implements Serializable{
 		this.department = department;
 	}
 
-	//Declarando métodos getters e setters
 	public Integer getId() {
 		return id;
 	}
@@ -73,7 +69,6 @@ public class Seller implements Serializable{
 		this.department = department;
 	}
 
-	//Declarando métodods hashCode e eqauals
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
@@ -91,7 +86,6 @@ public class Seller implements Serializable{
 		return Objects.equals(id, other.id);
 	}
 
-	//Declarando método toString()
 	@Override
 	public String toString() {
 		return "Seller [id: " + id + ", name: " + name + ", email: " + email 

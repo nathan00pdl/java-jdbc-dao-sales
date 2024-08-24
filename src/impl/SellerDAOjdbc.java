@@ -16,18 +16,13 @@ import db.dbException;
 import entities.Department;
 import entities.Seller;
 
-//Obs: 'SellerDAOjdbc' é uma implementação jdbc da interface 'SellerDAO'
 public class SellerDAOjdbc implements SellerDAO{
 	
-	//Gerando dependência
 	private Connection conn;
-	
 	public SellerDAOjdbc(Connection conn) {
 		this.conn = conn;
 	}
 
-	
-	//Declarando métodos estáticos
 	@Override
 	public void insert(Seller obj) {
 		PreparedStatement st = null;
@@ -123,7 +118,6 @@ public class SellerDAOjdbc implements SellerDAO{
 			st.setInt(1, id);
 			rs = st.executeQuery();
 			
-			//testando se a querie foi executada (se retornou dados ou não)
 			if (rs.next()) {
 				Department dep = instantiateDepartment(rs);
 				Seller obj = instantiateSeller(rs,dep);
@@ -176,21 +170,17 @@ public class SellerDAOjdbc implements SellerDAO{
 			
 			rs = st.executeQuery();
 			
-			//Declaração de uma lista para guardar os resultados da querie
 			List<Seller> list = new ArrayList<>();
-			
-			//Declaração de uma estrutura 'map' para controlar a não repetição de departamentos gerados
 			Map<Integer, Department> map = new HashMap<>();
 			
 			while (rs.next()) {
-				//Controle da não repetição dos departamentos
 				Department dep  = map.get(rs.getInt("DepartmentId"));
 				
 				if (dep == null) {
 					dep = instantiateDepartment(rs);
 					map.put(rs.getInt("DepartmentId"), dep);
 				}
-				
+
 				Seller obj = instantiateSeller(rs,dep);
 				list.add(obj);
 			}
@@ -221,14 +211,10 @@ public class SellerDAOjdbc implements SellerDAO{
 			st.setInt(1, department.getId());
 			rs = st.executeQuery();
 			
-			//Declaração de uma lista para guardar os resultados da querie
 			List<Seller> list = new ArrayList<>();
-			
-			//Declaração de uma estrutura 'map' para controlar a não repetição de departamentos gerados
 			Map<Integer, Department> map = new HashMap<>();
 			
 			while (rs.next()) {
-				//Controle da não repetição dos departamentos
 				Department dep  = map.get(rs.getInt("DepartmentId"));
 				
 				if (dep == null) {
