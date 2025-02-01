@@ -9,7 +9,7 @@ In short, the development was done with the Spring Boot framework, in witch I ha
 
 ## Project structure 
 - Design Pattern: DAO 
-- Layered system
+- Layered system - MVC
 
 ## Backend
 - Java
@@ -20,7 +20,7 @@ In short, the development was done with the Spring Boot framework, in witch I ha
 ## Connection to the database
 - JDBC (SQL-based data access)
   
-## Web request
+## Web requests
 - Postman (testing requests with methods GET, PUT, POST e DELETE)
 - Thunder Client (extension for testing requests in vscode)
 
