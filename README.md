@@ -1,34 +1,30 @@
-# Projeto Spring Boot com JDBC
+# Spring Boot project with JDBC
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/nathan00pdl/Projeto2_Java_Spring/blob/main/LICENSE) 
 
-# Sobre o projeto
+# About the project
 
-Esse projeto foi realizado em conjunto com as aulas disponibilizadas no curso "java COMPLETO 2023 Programação Orientada a Objetos + Projetos" na plataforma [Udemy](https://www.udemy.com/).
+This project was carried out in conjunction with the classes available in the course "COMPLETE Java 2023 Object-Oriented Programming + Projects" on the platfform [Udemy](https://www.udemy.com/).
 
-De forma resumida, o desenvolvimento foi feito com o framework Spring Boot, em que tive contato pela primeira vez com conexão a banco de dados (nesse projeto, utilizamos o banco MySQL) e implementação do padrão DAO, envolvendo um sistema básico de vendas e departamentos.
+In short, the development was done with the Spring Boot framework, in witch I had contact for the first time with in-depth use of an API that allows connection of java programs with a database, in the case of JDBC (Java Database Connectivity) and implementation DAO (Data Access Object) standard, involving a basic sales and department system. 
 
+## Project structure 
+- Design Pattern: DAO 
+- Layered system
 
-# Competências
-- Padrão de Projeto: DAO (Data Access Object)
-- Sistema em camadas
-
-
-# Tecnologias utilizadas
-## Back end
+## Backend
 - Java
-- Spring Boot (principal framework java para desenvolvimento comercial)
-- JPA / Hibernate (acesso a dados com mapeamento objeto-relacional (ORM))
-- Maven (gerenciamento de dependências)
+- Spring Boot 
+- JPA + Hibernate implementation (data access with Object-relational mapping - ORM)
+- Maven (dependency management)
   
-## Conexão ao banco de dados
-- JDBC (acesso a dados baseado em SQL)
+## Connection to the database
+- JDBC (SQL-based data access)
   
-## Requisições web
-- Postman (teste de requisições com métodos GET, PUT, POST e DELETE)
+## Web request
+- Postman (testing requests with methods GET, PUT, POST e DELETE)
+- Thunder Client (extension for testing requests in vscode)
 
-
-
-# Autor
+### Contact with me 
 
 Nathan Paiva de Lacerda
 
