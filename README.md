@@ -14,7 +14,7 @@ In short, the development was done with the **Spring Boot** framework, in witch 
 
 ## Project structure 
 - Design Pattern: **DAO** 
-- **Layered system - MVC**
+- **Layered architecture - MVC**
 
 ## Backend
 - **Java**
