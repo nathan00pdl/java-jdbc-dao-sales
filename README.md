@@ -13,8 +13,8 @@ This project was carried out in conjunction with the classes available in the co
 In short, the development was done with the **Spring Boot** framework, in witch I had contact for the first time with in-depth use of an **API** that allows connection of java programs with a database, in the case of **JDBC** (Java Database Connectivity) and implementation **DAO** (Data Access Object) standard, involving a basic **sales** and **department system**. 
 
 ## Project Structure 
-- Design Pattern: **DAO** 
 - **Layered architecture - MVC**
+- Design Pattern: **DAO** (Data Access Object)
 
 ## Backend
 - **Java**
