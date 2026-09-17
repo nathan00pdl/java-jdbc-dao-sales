@@ -1,0 +1,6 @@
+# Copy this file to `db.properties` and fill in your own values.
+# `db.properties` is ignored by git and must never be committed.
+user=
+password=
+dburl=jdbc:mysql://localhost:3306/your_database
+useSSL=false

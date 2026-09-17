@@ -1,0 +1,5 @@
+# Compiled output
+bin/
+
+# Local database credentials
+db.properties
