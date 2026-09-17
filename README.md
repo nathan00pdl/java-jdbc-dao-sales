@@ -8,7 +8,7 @@ A sellers and departments system built with **plain Java and JDBC**, no framewor
 
 Built while following the Udemy course *"COMPLETE Java 2023 Object-Oriented Programming + Projects"*, by Nélio Alves. This was my first in-depth contact with JDBC, the API that connects a Java program to a relational database — the layer that frameworks like Hibernate hide behind an ORM.
 
-> **Note:** this is a study project from before I started using frameworks. It is a console application: there is no Spring, no Maven, no REST API. The repository was originally named `spring-boot-JDBC`, which described none of that.
+> **Note:** this is a study project from before I started using frameworks. It is a console application: there is no Spring, no Maven, no REST API.
 
 ## Tech stack
 
