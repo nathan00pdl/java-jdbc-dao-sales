@@ -17,14 +17,14 @@ public class Program2 {
 		System.out.println("==== TEST 1: findById ====");
 		DepartmentDAO departmentDao = daoFactory.createDepartmentDAO();
 		Department dep1 = departmentDao.findById(1);
-		System.out.println(dep1);  //Será retornado o department 'Computers'
+		System.out.println(dep1);  // prints the 'Computers' department
 		
 		System.out.println();
 
 		System.out.println("==== TEST 2: findAll ====");
 		List<Department> list = departmentDao.findAll();
 		for (Department d : list) {
-			System.out.println(d);  //Será retornado todos os de departments
+			System.out.println(d);
 		}
 
 		System.out.println();
@@ -38,7 +38,7 @@ public class Program2 {
 
 		System.out.println("==== TEST 4: UPDATE ====");
 		Department dep3 = departmentDao.findById(1);
-		dep3.setName("Food");  //O department 'Computers' passará ser chamado de 'Food'
+		dep3.setName("Food");  // renames 'Computers' to 'Food'
 		departmentDao.update(dep3);
 		System.out.println("Update completed");
 

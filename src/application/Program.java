@@ -30,7 +30,7 @@ public class Program {
 		System.out.println("====TEST 3: Seller findById====");
 		SellerDAO sellerDao = daoFactory.createSellerDAO();
 		Seller seller2 = sellerDao.findById(3);
-		System.out.println(seller2);  //Será retornado o seller 'Alex Grey'
+		System.out.println(seller2);  // prints the 'Alex Grey' seller
 		
 		System.out.println();
 		
@@ -39,7 +39,7 @@ public class Program {
 		SellerDAO sellerDao2 = daoFactory.createSellerDAO();
 		List<Seller> list = sellerDao2.findByDepartement(dep2);
 		for(Seller obj : list) {
-			System.out.println(obj);  //Será retornado o seller 'Alex Grey' e 'Martha Waine'
+			System.out.println(obj);  // prints the sellers of department 1
 		}
 		
 		System.out.println();
@@ -48,7 +48,7 @@ public class Program {
 		SellerDAO sellerDao3 = daoFactory.createSellerDAO();
 		list = sellerDao3.findAll();
 		for(Seller obj : list) {
-			System.out.println(obj);  //Será retornado todos os sellers
+			System.out.println(obj);
 		}
 		
 		System.out.println();
@@ -57,7 +57,7 @@ public class Program {
 		Seller seller3 = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.00, dep2);
 		sellerDao.insert(seller3);
 		System.out.println("New seller inserted!");
-		System.out.println("New Id: " + seller3.getId());  //Obs: essa linha testa o comando 'Statement.RETURN_GENERATED_KEYS);'
+		System.out.println("New Id: " + seller3.getId());  // the id comes from Statement.RETURN_GENERATED_KEYS
 	
 		System.out.println();
 		

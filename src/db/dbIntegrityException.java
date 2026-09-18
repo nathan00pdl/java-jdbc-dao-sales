@@ -1,7 +1,6 @@
 package db;
 
-//Exceção personalizada devido a problemática da "Integridade Referencial" (FOREIGN KEY)
-//Não será possível excluir uma coluna quando houver outras colunas sendo referenciadas por esta!
+// Raised on a referential integrity violation: a row cannot be deleted while other rows still reference it
 public class dbIntegrityException extends RuntimeException{
 	
 	private static final long serialVersionUID = 1L;
