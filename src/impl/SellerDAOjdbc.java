@@ -1,4 +1,4 @@
-package impl;  //'impl' -> implementação
+package impl;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
